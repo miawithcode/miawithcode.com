@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import Navbar from '@/components/layouts/navbar';
+import { db } from '@/db';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -25,6 +26,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  console.log(db);
+
   return (
     <html lang="en" className="h-full">
       <body
