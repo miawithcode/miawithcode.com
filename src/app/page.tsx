@@ -8,18 +8,18 @@ import { EMAIL, GITHUB_LINK, TWITTER_LINK } from '@/lib/constants';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 
-export const initial = { opacity: 0, y: 20 };
-export const animate = { opacity: 1, y: 0 };
-export const duration = 0.7;
-export const delay = 0.1;
+const initial = { opacity: 0, y: 20 };
+const animate = { opacity: 1, y: 0 };
+const duration = 0.7;
+const delay = 0.1;
 
-export const expectations = [
+const expectations = [
   'Building functional websites with React, TypeScript and Tailwind CSS',
   'Creating aesthetic and user-friendly UIs with Figma',
   'Developing full-stack web applications with Next.js',
 ];
 
-export const expectationsMore = [
+const expectationsMore = [
   'Crafting nice and smooth web animations with Framer Motion',
   'Multilingual communication skills (English, Japanese, Chinese)',
   "Background in Computer Science with a Bachelor's degree",

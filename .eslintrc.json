@@ -1,6 +1,6 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
-    "no-require-imports": "false"
+    "no-require-imports": "off"
   }
 }
