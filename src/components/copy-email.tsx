@@ -18,6 +18,7 @@ export default function CopyEmail({ email }: CopyEmailProps) {
         await navigator.clipboard.writeText(email);
         setMessage('copied!');
       } catch (error) {
+        console.log(error);
         setMessage('failed to copy');
       }
     } else {

@@ -1,4 +1,4 @@
-// @ts-nocheck
+// @ts-ignore
 export default function Badge(props) {
   return (
     <a
