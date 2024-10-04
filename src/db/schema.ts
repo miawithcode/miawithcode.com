@@ -5,9 +5,9 @@ export const categories = [
   'ui',
   'animations',
   'technologies',
+  'fonts',
   'svg',
   'colors',
-  'fonts',
   'other',
 ] as const;
 
