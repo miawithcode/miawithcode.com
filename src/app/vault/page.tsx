@@ -16,7 +16,7 @@ export default async function Page() {
         </p>
       </section>
 
-      <section className="mt-16">
+      <section className="py-16">
         <VaultContextProvider data={resources}>
           <CategoryFilter />
           <ResourcesGrid className="mt-6" />
