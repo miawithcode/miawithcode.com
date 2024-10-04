@@ -6,6 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { EMAIL, GITHUB_LINK, TWITTER_LINK } from '@/lib/constants';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 const initial = { opacity: 0, y: 20 };
@@ -82,17 +83,30 @@ export default function Home() {
             <span className="text-foreground">
               <Badge href="https://react.dev">
                 {/* <FaReact className="mr-1 inline-flex size-3 text-[#6ADCFB]" /> */}
+                <Image
+                  src="/icons/react.svg"
+                  alt="React Logo"
+                  width={12}
+                  height={12}
+                  className="mr-1"
+                />
                 React
               </Badge>
             </span>{' '}
             /{' '}
             <span className="text-foreground">
               <Badge href="https://nextjs.org/">
-                {/* <SiNextdotjs className="mr-1 inline-flex size-3 text-[#000]" /> */}
+                <Image
+                  src="/icons/nextjs.svg"
+                  alt="Next.js Logo"
+                  width={12}
+                  height={12}
+                  className="mr-1"
+                />
                 Next.js
               </Badge>
             </span>
-            . I define myself as a{' '}
+            . I&apos;m more of a{' '}
             <span className="text-foreground">Design Engineer</span> than a
             Frontend Developer, as I also excel in designing beautiful UIs.
           </p>
@@ -167,14 +181,26 @@ export default function Home() {
             View my code and open-source projects on{' '}
             <span>
               <Badge href={GITHUB_LINK}>
-                {/* <FaGithub className="mr-1 inline-flex size-3" /> */}
+                <Image
+                  src="/icons/github.svg"
+                  alt="GitHub Logo"
+                  width={12}
+                  height={12}
+                  className="mr-1"
+                />
                 GitHub
               </Badge>
             </span>
             , follow me on{' '}
             <span>
               <Badge href={TWITTER_LINK}>
-                {/* <FaXTwitter className="mr-1 inline-flex size-3" /> */}
+                <Image
+                  src="/icons/twitter.svg"
+                  alt="Twitter Logo"
+                  width={12}
+                  height={12}
+                  className="mr-1"
+                />
                 Twitter / X
               </Badge>
             </span>

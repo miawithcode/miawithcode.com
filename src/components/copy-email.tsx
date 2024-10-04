@@ -1,8 +1,9 @@
 'use client';
 
-import { EnvelopeOpenIcon } from '@radix-ui/react-icons';
+import { EnvelopeClosedIcon } from '@radix-ui/react-icons';
 import { useEffect, useRef, useState } from 'react';
 import { Button } from './ui/button';
+import Image from 'next/image';
 
 type CopyEmailProps = {
   email: string;
@@ -47,10 +48,15 @@ export default function CopyEmail({ email }: CopyEmailProps) {
         onClick={saveToClipboard}
         variant={'outline'}
         size={'sm'}
-        // className="text-text inline-flex items-center whitespace-nowrap rounded border border-border bg-neutral-50 p-1 text-[15px] leading-4 no-underline dark:bg-neutral-800"
-        className="p-1 text-[15px] font-normal leading-4"
+        className="h-[26px] p-1 text-[15px] font-normal"
       >
-        <EnvelopeOpenIcon className="mr-1 inline-flex size-[14px]" />
+        <Image
+          src="/icons/envelop.svg"
+          alt="Email Icon"
+          width={13}
+          height={13}
+          className="mr-1"
+        />
         {email}
       </Button>
 
