@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body
         className={cn(
-          'font-geist-sans relative flex h-full min-h-screen flex-col antialiased',
+          'font-geist-sans relative mx-auto flex h-full min-h-screen w-full max-w-screen-md flex-col px-4 antialiased sm:px-16 lg:px-24',
           geistSans.variable,
           geistMono.variable,
         )}

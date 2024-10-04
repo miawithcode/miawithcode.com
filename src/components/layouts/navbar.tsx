@@ -13,7 +13,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="mx-auto w-full max-w-screen-md px-4 py-5 sm:px-16 lg:px-24">
+    <nav className="py-4">
       <ul className="flex items-center gap-4 border-b border-border py-2">
         {routes.map((route) => (
           <li

@@ -1,6 +1,5 @@
 'use client';
 
-import { EnvelopeClosedIcon } from '@radix-ui/react-icons';
 import { useEffect, useRef, useState } from 'react';
 import { Button } from './ui/button';
 import Image from 'next/image';

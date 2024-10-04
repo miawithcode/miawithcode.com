@@ -53,7 +53,7 @@ export default function Home() {
         initial={initial}
         animate={animate}
         transition={{ duration: duration, delay: delay * 0 }}
-        className="mx-auto mt-8 flex w-full max-w-screen-md items-center gap-2 px-4 py-5 sm:px-16 lg:px-24"
+        className="mt-8 flex items-center gap-2 py-5"
       >
         <div>
           <Avatar className="h-14 w-14">
@@ -63,7 +63,7 @@ export default function Home() {
         </div>
         <div className="font-medium">
           <h3>Mia</h3>
-          <p className="tracking-tight text-muted">Frontend Developer</p>
+          <p className="text-muted">Frontend Developer (Design Engineer)</p>
         </div>
       </motion.section>
 
@@ -72,14 +72,16 @@ export default function Home() {
         initial={initial}
         animate={animate}
         transition={{ duration: duration, delay: delay * 1 }}
-        className="mx-auto w-full max-w-screen-md px-4 py-5 sm:px-16 lg:px-24"
+        className="py-5"
       >
         <h3 className="mb-1 text-lg font-semibold lowercase">
           hey, I&apos;m Mia
         </h3>
         <div className="text-muted">
           <p>
-            I build websites with{' '}
+            I&apos;m a{' '}
+            <span className="text-foreground">frontend developer</span> who
+            knows how to design, experienced in building websites using{' '}
             <span className="text-foreground">
               <Badge href="https://react.dev">
                 {/* <FaReact className="mr-1 inline-flex size-3 text-[#6ADCFB]" /> */}
@@ -106,9 +108,7 @@ export default function Home() {
                 Next.js
               </Badge>
             </span>
-            . I&apos;m more of a{' '}
-            <span className="text-foreground">Design Engineer</span> than a
-            Frontend Developer, as I also excel in designing beautiful UIs.
+            .
           </p>
         </div>
       </motion.section>
@@ -118,7 +118,7 @@ export default function Home() {
         initial={initial}
         animate={animate}
         transition={{ duration: duration, delay: delay * 2 }}
-        className="mx-auto w-full max-w-screen-md px-4 py-5 sm:px-16 lg:px-24"
+        className="py-5"
       >
         <h3 className="mb-1 text-lg font-semibold lowercase">
           what you can expect from me
@@ -142,7 +142,7 @@ export default function Home() {
         <Button
           variant={'link'}
           onClick={handleClick}
-          className="inline-flex items-center text-muted underline hover:text-foreground"
+          className="inline-flex items-center text-base font-normal text-muted underline hover:text-foreground"
         >
           {isOpen ? 'hide' : 'and'} more...
         </Button>
@@ -153,7 +153,7 @@ export default function Home() {
         initial={initial}
         animate={animate}
         transition={{ duration: duration, delay: delay * 3 }}
-        className="mx-auto w-full max-w-screen-md px-4 py-5 sm:px-16 lg:px-24"
+        className="py-5"
       >
         <h3 className="mb-1 text-lg font-semibold lowercase">tech stacks</h3>
         <ul className="flex flex-wrap gap-1.5">
@@ -173,13 +173,13 @@ export default function Home() {
         initial={initial}
         animate={animate}
         transition={{ duration: duration, delay: delay * 4 }}
-        className="mx-auto mb-8 w-full max-w-screen-md px-4 py-5 sm:px-16 lg:px-24"
+        className="py-5"
       >
         <h3 className="mb-1 text-lg font-semibold lowercase">connect</h3>
-        <div className="text-foreground">
+        <div className="text-muted">
           <p>
             View my code and open-source projects on{' '}
-            <span>
+            <span className="text-foreground">
               <Badge href={GITHUB_LINK}>
                 <Image
                   src="/icons/github.svg"
@@ -192,7 +192,7 @@ export default function Home() {
               </Badge>
             </span>
             , follow me on{' '}
-            <span>
+            <span className="text-foreground">
               <Badge href={TWITTER_LINK}>
                 <Image
                   src="/icons/twitter.svg"
@@ -205,7 +205,7 @@ export default function Home() {
               </Badge>
             </span>
             , or email me at{' '}
-            <span>
+            <span className="text-foreground">
               <CopyEmail email={EMAIL} />
             </span>
             .
