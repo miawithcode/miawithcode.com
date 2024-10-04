@@ -1,4 +1,4 @@
-// @ts-ignore
+// @ts-expect-error
 export default function Badge(props) {
   return (
     <a
