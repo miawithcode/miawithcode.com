@@ -1,5 +1,5 @@
 import Resources from '@/components/resources';
-import ResourceGridSkeleton from '@/components/skeletons/resource-grid-skeleton';
+import ResourcesSkeleton from '@/components/skeletons/resources-skeleton';
 import { Suspense } from 'react';
 
 export default function Page() {
@@ -12,7 +12,7 @@ export default function Page() {
           and designers to inspire, learn, and create.
         </p>
       </section>
-      <Suspense fallback={<ResourceGridSkeleton />}>
+      <Suspense fallback={<ResourcesSkeleton />}>
         <Resources />
       </Suspense>
     </>
