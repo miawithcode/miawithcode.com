@@ -64,7 +64,9 @@ export default function Home() {
         </div>
         <div className="font-medium">
           <h3>Mia</h3>
-          <p className="text-muted">Frontend Developer (Design Engineer)</p>
+          <p className="text-muted">
+            Design Engineer (Frontend Developer + Designer)
+          </p>
         </div>
       </motion.section>
 
@@ -158,16 +160,8 @@ export default function Home() {
       >
         <h3 className="mb-1 text-lg font-semibold lowercase">tech stacks</h3>
         <div className="flex flex-col gap-2">
-          {/* {techStacks.map((stack, index) => (
-            <li
-              key={index}
-              className="rounded border border-border bg-neutral-50 p-1 text-sm text-muted hover:text-foreground dark:bg-neutral-800"
-            >
-              {stack}
-            </li>
-          ))} */}
           {techStacks.map((stack, index) => (
-            <div key={index} className="flex items-baseline gap-1">
+            <div key={index} className="grid grid-cols-[96px_1fr]">
               <h3 className="text-muted">{stack.category}:</h3>
               <ul>
                 <li className="flex flex-wrap gap-1.5">
