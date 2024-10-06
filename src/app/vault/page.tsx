@@ -1,11 +1,8 @@
-import CategoryFilter from '@/components/category-filter';
-import ResourcesGrid from '@/components/resources-grid';
-import VaultContextProvider from '@/context/vault-context-provider';
-import { getResources } from '@/lib/queries/vault';
+import Resources from '@/components/resources';
+import ResourceGridSkeleton from '@/components/skeletons/resource-grid-skeleton';
+import { Suspense } from 'react';
 
-export default async function Page() {
-  const resources = await getResources();
-
+export default function Page() {
   return (
     <>
       <section>
@@ -15,13 +12,9 @@ export default async function Page() {
           and designers to inspire, learn, and create.
         </p>
       </section>
-
-      <section className="py-16">
-        <VaultContextProvider data={resources}>
-          <CategoryFilter />
-          <ResourcesGrid className="mt-6" />
-        </VaultContextProvider>
-      </section>
+      <Suspense fallback={<ResourceGridSkeleton />}>
+        <Resources />
+      </Suspense>
     </>
   );
 }

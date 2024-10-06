@@ -17,7 +17,7 @@ export default function ResourcesGrid({ className }: { className?: string }) {
     <div className={cn('grid grid-cols-1 gap-4 sm:grid-cols-2', className)}>
       {resources.map((resource) => (
         <a key={resource.id} href={resource.link} target="_blank">
-          <Card className="relative">
+          <Card>
             <CardContent className="p-3">
               <div className="rounded-xl border border-border p-1">
                 <div className="relative h-40 w-full overflow-hidden rounded-xl">
