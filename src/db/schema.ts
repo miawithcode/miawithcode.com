@@ -9,6 +9,7 @@ export const categories = [
   'svg',
   'icons',
   'colors',
+  'articles',
   'other',
 ] as const;
 
