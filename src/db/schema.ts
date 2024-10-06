@@ -1,6 +1,7 @@
 import { pgEnum, pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
 
 export const categories = [
+  'icons',
   'inspirations',
   'ui',
   'animations',
